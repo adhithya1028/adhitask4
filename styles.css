@@ -1,0 +1,114 @@
+/* Base styles (for large devices by default) */
+
+/* Styles for tablets (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .header__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__brand-search {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header__search {
+        margin-top: var(--spacing-sm);
+    }
+
+    .products__grid {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-card {
+        width: 48%;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* Styles for small devices (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .header__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__brand-search {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header__search {
+        margin-top: var(--spacing-sm);
+    }
+
+    .products__grid {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-card {
+        width: 48%;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: var(--spacing-md);
+        max-width: none;
+    }
+}
+
+/* Styles for extra small devices (less than 576px) */
+@media (max-width: 575px) {
+    .header__top {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .header__brand-search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__search {
+        margin-top: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .header__info {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .header__info span {
+        margin: var(--spacing-sm) 0;
+    }
+
+    .products__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: var(--spacing-md);
+        max-width: none;
+    }
+}
